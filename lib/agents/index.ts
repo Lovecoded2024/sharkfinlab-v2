@@ -4,7 +4,7 @@ import { simonsAgent } from './simons-agent';
 import { BaseTraderAgent, MarketContext } from './base-agent';
 
 // 导出所有 agent
-export const agents: Map<string, BaseTraderAgent> = new Map([
+export const agents: Map<string, BaseTraderAgent> = new Map<string, BaseTraderAgent>([
   ['buffett', buffettAgent],
   ['soros', sorosAgent],
   ['simons', simonsAgent],
