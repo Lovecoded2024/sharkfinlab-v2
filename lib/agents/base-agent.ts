@@ -38,7 +38,7 @@ export interface MarketContext {
   hotSectors?: string[];
 }
 
-export abstract class BaseTraderAgent {
+export class BaseTraderAgent {
   protected id: string;
   protected name: string;
   protected config: AgentConfig;
@@ -183,10 +183,13 @@ export abstract class BaseTraderAgent {
   /**
    * 寻找新机会（子类实现）
    */
-  protected abstract findOpportunities(
+  protected async findOpportunities(
     context: MarketContext,
     marketAnalysis: string
-  ): Promise<TradeDecision[]>;
+  ): Promise<TradeDecision[]> {
+    // 默认实现：返回空数组，子类应该重写此方法
+    return [];
+  }
 
   /**
    * 获取当前持仓数量
