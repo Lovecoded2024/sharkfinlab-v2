@@ -114,7 +114,7 @@ export class BaseTraderAgent {
     });
 
     const marketSummary = indices.map(i => 
-      `${i.tsCode}: ${i.close} (${i.pctChg}%)
+      `${i.tsCode}: ${i.close} (${i.pctChg}%)`
     ).join('\n');
 
     return `今日市场概况：\n${marketSummary}`;
