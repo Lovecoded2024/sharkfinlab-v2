@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import { openai, chatCompletion } from '../llm';
+import { openai, chatCompletion } from './llm';
 import { Decimal } from '@prisma/client/runtime/library';
 
 const prisma = new PrismaClient();

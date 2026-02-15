@@ -1,5 +1,5 @@
-import { openai, anthropic } from '../llm';
-import { prisma } from '../prisma';
+import { openai, anthropic } from './llm';
+import { prisma } from './prisma';
 
 // 数据库 Schema 描述（用于 SQL 生成）
 const DB_SCHEMA = `
