@@ -41,3 +41,4 @@ prisma/migrations/
 
 # Supabase
 .supabase/
+.vercel
